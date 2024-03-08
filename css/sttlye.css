@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Young Serif',Bold serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background:hsl(30,54%,90%);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000; 
+}
+section nav .logo img{
+    width: 90px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+section nav ul{
+    list-style: none;
+}
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: hsl(14, 39%, 62%);
+    display: block;
+    transition: 0.2s linear;
+}
+section nav ul li a:hover::after{
+    width: 100%;
+}
+section nav ul li a:hover{
+    color:hsl(14, 39%, 62%);
+}
+
+
+#search-box {
+	border: none;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	background-color: #fff;
+	color: #333;
+	outline: none;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	width: 50%;
+	max-width: 400px;
+	transition: width 0.3s ease-in-out;
+}
+
+#search-box:focus {
+	width: 100%;
+}
+
+.recipe-card{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow:  0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.recipe-card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.recipe-card h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.button{
+    background-color: hsl(14,45%,36%);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+footer{
+
+    background-color:hsl(14, 39%, 62%);
+    color:black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+footer h3 {
+    margin: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 0 10px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}

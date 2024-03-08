@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Young Serif',Bold serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background:hsl(30,54%,90%);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000; 
+}
+section nav .logo img{
+    width: 90px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+section nav ul{
+    list-style: none;
+}
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: hsl(14, 39%, 62%);
+    display: block;
+    transition: 0.2s linear;
+}
+section nav ul li a:hover::after{
+    width: 100%;
+}
+section nav ul li a:hover{
+    color:hsl(14, 39%, 62%);
+}
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    position:relative;
+    top: 130px;
+}
+section .main .title h1{
+    font-size: 60px;
+    position:relative;
+    top: -200px;
+    left: 20px;
+}
+section .main .title h1 span{
+    margin-left: 15px;
+    color: hsl(14, 39%, 62%);
+    font-family:'Young Serif',Bold serif;
+    line-height: 22px;
+    font-size: 70px;
+}
+section .main .main_image img{
+    width: 550px;
+    position: relative;
+    left: 40px;
+    display: flex;
+    border-radius: 10rem;
+    border-style:hidden;
+    overflow:hidden;
+}
+section p{
+    width: 590px;
+    text-align: justify;
+    position: relative;
+    display: flex;
+    left: 70px;
+    bottom: 200px;
+    line-height: 20px;
+}
+
+section .main_btn{
+    background: hsl(14, 39%, 62%);
+    position: relative;
+    left: 180px;
+    bottom: 80px;
+    width: 140px;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10rem;
+}
+section .main_btn a{
+    color:black;
+    margin-right: 5px;
+    text-decoration: none;
+}
+section .main_btn i{
+    color: black;
+    transition: 0.3s;
+}
+section .main_btn:hover i{
+    transform: translateX(7px);
+}
+
+main{
+    padding: 20px;
+    
+}
+.container{
+    max-width: 2000px;
+    background-color: var(--white);
+    margin: 0rem;
+    border-radius: 1rem;
+}
+.container nav{
+    max-width: 2000px;
+    margin: 0rem;
+    border-radius: 1rem;
+}
+.container1{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: hsl(14, 39%, 62%);
+    text-align: center;
+    border-radius: 20rem;
+}
+
+h2{
+    margin-top: 0;
+}
+.recipe-card{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow:  0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.recipe-card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.recipe-card h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.button{
+    background-color: hsl(14,45%,36%);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+.about{
+    width:100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+.about .about_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about .about_main .imgae img{
+    width: 300px;
+    position: relative;
+    top: 60px;
+    border-radius: 20rem;
+}
+.about .about_main .about_te h1 span{
+    color: hsl(14, 39%, 62%);
+    margin-right: 15px;
+    font-family:'Young Serif',Bold serif;
+}
+.about .about_main .about_te h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 50px;
+}
+.about .about_main .about_te h3{
+    font-size: 30px;
+    margin: 0 0 50px 0;
+}
+.about .about_main .about_te .p2{
+    width: 500px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+    bottom: 30px;
+    left: 20px;
+}
+.about .about_main .about_te .p1{
+    width: 500px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+    bottom: 30px;
+    left: 20px;
+}
+footer{
+
+    background-color:hsl(14, 39%, 62%);
+    color:black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+footer h3 {
+    margin: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 0 10px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
